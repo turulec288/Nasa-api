@@ -16,40 +16,48 @@
     <!-- <h1 id="title"></h1>
   <p id="date"></p>
   <p id="explanation"></p>
-  <img id="image" src="" alt="NASA APOD"  class="img-fluid">
-    <script src="script.js"></script> -->
+  <img id="image" src="" alt="NASA APOD"  class="img-fluid">  -->
+    
     <div>
       <main class="hero">
-       
-        <div class="card" style="width: 20%">
+        <div class="promo">
+          <h1>Lorem ipsum dolor itecto, vel beum.</h1>
+        </div>
+        <div class="card " style="width: 20%">
             
-            <div class="card-body" id="promo">
+            <div class="card-body" >
                 <h5 class="card-title">🚀 Foto diaria 🚀</h5>
-                 <p id="dayly-title">Imagen de Marte</p>
+                 <p id="daily-title"></p>
+                 <p id="date"></p>
+                 
                     <details>
-                     <summary class="btn btn-primary">¿Qué es esto?</summary>
+                     <summary class="btn btn-primary">Cuéntame más</summary>
                         <p id="explanation" class="card-text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
-                        expedita temporibus consequatur natus. Minus expedita ipsa aut
-                        quisquam aperiam iste voluptates vero doloribus tenetur quibusdam.
-                        Porro, veritatis voluptate? Aliquid, architecto! Lorem ipsum dolor
-                        sit amet consectetur adipisicing elit. Soluta necessitatibus natus
-                        autem pariatur culpa quo, ipsum exercitationem fuga id ad sint
-                        fugit minus vel quia? Quia, dolore? Autem, sit a.
+                        
                         </p>
                     </details>
                     <img
-                    src="src/mariano.png"
+                    src=""
                     class="card-img-top"
                     alt="foto diaria NASA"
                     id="image"/>
             </div>
-        </div>
-        <video autoplay loop muted plays-inline >
+          </div>
+        <video autoplay loop muted plays-inline id="video1" >
             <source src="src/Nasa-moon.mp4" type="video/mp4" />
           </video>
+      
         <div class="capa"></div>
+        
       </main>
+      <video autoplay loop muted plays-inline id="video2" >
+        <source src="src/Nasa-moon.mp4" type="video/mp4" />
+      </video>
     </div>
+   <div>    <!--segunda API -->
+      <h1>Imágenes de la NASA</h1>
+      <ul id="imageList"></ul>
+    </div>
+    <script src="script.js"></script> 
   </body>
 </html>
