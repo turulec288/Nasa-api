@@ -59,25 +59,17 @@ Promise.all([
 ])
   .then(([apodData, imagesData]) => {
     // Manipular los datos de la respuesta de la API APOD
+    console.log("Datos de APOD:", apodData);
+    document.getElementById("daily-title").textContent = apodData.title;
+    document.getElementById("date").textContent = `Fecha: ${apodData.date}`;
+    document.getElementById("explanation").textContent = apodData.explanation;
+    document.getElementById("image").src = apodData.url;
 
     // Manipular los datos de la respuesta de la API de imágenes
-    mostrarResultados(imagesData.collection.items);
+    console.log("Datos de Imágenes de la NASA:", imagesData);
+    // Puedes agregar aquí la lógica para mostrar los resultados de la segunda API
   })
   .catch(error => {
     // Manejar errores en caso de que alguna de las solicitudes no sea exitosa
     console.error('Error al obtener los datos:', error);
   });
-
-
-
-// Función para mostrar los resultados de la API de imágenes en la página
-function mostrarResultados(items) {
-  const imageList = document.getElementById('imageList');
-
-  // Iterar sobre los elementos y mostrar información básica
-  items.forEach(item => {
-    const listItem = document.createElement('li');
-    listItem.textContent = `Título: ${item.data[0].title}, Nasa ID: ${item.data[0].nasa_id}`;
-    imageList.appendChild(listItem);
-  });
-}
