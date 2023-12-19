@@ -4,9 +4,6 @@
 CosmoHub es un proyecto estudiantil que explora las maravillas del espacio exterior al aprovechar datos de dos poderosas APIs: NASA y SpaceX. Este proyecto ofrece una experiencia única, combinando imágenes cautivadoras del Astronomy Picture of the Day (APOD) de la NASA con información en tiempo real sobre los lanzamientos de SpaceX.
 
 ![alt text](https://ih1.redbubble.net/image.4680922817.0373/ur,pin_small_front,square,1000x1000.jpg)
-
-Try this markdown:
-
 ![alt text](http://akpsi-umdearborn.org/wp-content/uploads/2019/03/spacex-logo.jpg)
 
 
